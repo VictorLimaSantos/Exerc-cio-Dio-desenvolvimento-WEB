@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0603a8;
+
+        }
+    </style>
+    <title>Index</title>
+</head>
+
+<body>
+    <h1>Introdução</h1>
+    <hr>
+
+    <p>
+        Esta página tem como objetivo documentar de forma teórica e prática os conhecimentos adquiridos sobre HTML no
+        curso <strong><i>"Formação HTML Web Developer".</i></strong> Aqui, cada tópico será explicado com base nas
+        aulas, aplicando os conceitos aprendidos até o momento para reforçar o entendimento e facilitar a aprendizagem.
+    </p>
+    <hr>
+    <ul>
+        <h2>Segue os topicos a serem abordados:</h2>
+        <li><a href="#Historia-Web">Historia da Web</a></li>
+        <li><a href="#Cliente-servidor">Cliente X Servidor</a></li>
+        <li><a href="#Linguagem-Programacao">Linguagem de Programação</a></li>
+        <li><a href="#Estrutura-HTML">Estrutura basica do HTML</a></li>
+        <li><a href="#Tags">O que são tegs</a></li>
+        <ul>
+            <li><a href="#Principais-Tags">Principais tags</a></li>
+            <ul>
+                <li><a href="#H1-6">TAG H1 - H6</a></li>
+                <li><a href="#p">TAG P</a></li>
+                <li><a href="#img">TAG IMG</a></li>
+                <li><a href="#a">TAG A</a></li>
+                <li><a href="#str">Tag Strong</a></li>
+                <li><a href="#i">Tag I</a></li>
+                <li><a href="#u">Tag U</a></li>
+                <li><a href="#hr">Tag HR</a></li>
+                <li><a href="#block">Tag Blockquote</a></li>
+                <li><a href="#mark">Tag Mark</a></li>
+                <li><a href="#smal">Tag small</a></li>
+                <li><a href="#sup">Tag SUP</a></li>
+                <li><a href="#sub">Tag SUB</a></li>
+                <li><a href="#list">Tags de Listas</a></li>
+            </ul>
+        </ul>
+        <li><a href="#outras-tags">Outras tags</a></li>
+        <li><a href="#atr">Atributos de tags</a></li>
+    </ul>
+    <hr>
+
+    <h3 id="Historia-Web">Historia da WEB</h3>
+    <p>
+        A historia da WEB se inicia antes mesmo dos primeiros computadores pessoais, no inicio do seculo <i>XX</i> com o
+        desenvolvimento de máquinas mecânicas para cálculos. Tendo commo marco importante o <strong>ENIAC</strong>,
+        criado em 1946, e dando início a era dos computadores digitais eletrônicos, utilizados principalmente para cálculos científicos e militares.
+    </p>
+    <p>
+        Nos anos 1950 e 1960, surgiram os mainframes, grandes computadores usados principalmente por governos e empresas.
+    </p>
+    <p>
+        Com a invenção dos transistores (1947) e, mais tarde, dos circuitos integrados (década de 1960), os computadores
+        ficaram menores, mais rápidos e acessíveis. A década de 1970 trouxe os primeiros microcomputadores para uso
+        pessoal, como o Altair 8800 (1975) e o Apple II (1977). Em 1981, a IBM lançou seu IBM PC.
+    </p>
+    <p>
+        Nos anos 1980, o crescimento da computação pessoal abriu o caminho para a criação de redes. Isso levou ao
+        desenvolvimento da internet, uma rede global de computadores que evoluiu a partir da ARPANET (1969), uma rede
+        criada pelo Departamento de Defesa dos EUA. Finalmente, em 1989, com a criação da World Wide Web por Tim
+        Berners-Lee, a internet foi transformada em uma plataforma acessível ao público, unindo a comunicação e a
+        informação globalmente.
+    </p>
+    <p>
+        o desenvolvimento das redes de computadores, como a ARPANET (1969), deu origem à internet. E o Cientista
+        Tim Berners-Lee revolucionou a comunicação digital ao propor a World Wide Web, um sistema de compartilhamento de
+        informações baseado em hipertextos. Em 1990, ele criou o primeiro site e desenvolveu os principais elementos da
+        Web: o protocolo HTTP, a linguagem HTML e o conceito de URLs. A primeira página da Web foi lançada em 1991, com
+        a proposta de facilitar o acesso a documentos científicos.
+    </p>
+    <p>
+        Nos anos seguintes, a Web cresceu rapidamente, com o surgimento de navegadores gráficos como o Mosaic (1993) e o
+        Netscape Navigator (1994). Em 1995, a linguagem de programação JavaScript foi criada, permitindo interatividade
+        nos sites. A popularização da Web transformou a comunicação, o comércio e a sociedade global, levando à era
+        moderna da internet com plataformas dinâmicas, redes sociais e serviços digitais.
+    </p>
+    <hr>
+
+    <h3 id="Cliente-servidor">Cliente X Servidor</h3>
+    <p>
+        O sistema Cliente-Servidor é um modelo de arquitetura de rede onde duas partes principais interagem: o cliente e
+        o servidor. O cliente é o dispositivo ou software que faz solicitações, enquanto o servidor é o que processa
+        essas requisições e fornece os recursos ou serviços solicitados.
+    </p>
+    <p>
+        O cliente é o dispositivo, que faz solicitações, geralmente por meio de um software, como um navegador de
+        internet ou um aplicativo. O servidor, por sua vez, é o sistema que recebe essas solicitações, processa os dados
+        e responde com as informações solicitadas.
+    </p>
+    <p>
+        Esse modelo é amplamente utilizado na Web. Quando você acessa um site, por exemplo, seu navegador (cliente)
+        envia uma solicitação ao servidor, que hospeda o site. O servidor processa a solicitação e envia os dados de
+        volta ao cliente, que exibe a página para o usuário.
+    </p>
+    <hr>
+
+    <h3 id="Linguagem-Programacao">Linguagem de Programação</h3>
+    <p>
+        Uma linguagem de programação é um conjunto de instruções que permite a comunicação entre o programador e o
+        computador. Por meio dessas linguagens, os desenvolvedores escrevem códigos para criar programas, aplicativos e
+        sistemas, controlando o comportamento e a lógica de funcionamento de um software. Linguagens de programação, como
+        JavaScript, Python e Java, têm sintaxes e regras que permitem a criação de algoritmos e a execução de tarefas
+        específicas, desde cálculos simples até funções mais complexas como inteligência artificial.
+    </p>
+    <p>
+        O HTML (HyperText Markup Language), não é considerado uma linguagem de programação porque ele não executa
+        instruções nem contém lógica. Em vez disso, o HTML é uma linguagem de marcação, usada para estruturar o conteúdo
+        de páginas web. Ele define elementos como títulos, parágrafos, imagens e links, mas não contém funcionalidades
+        para processar dados ou executar ações.
+    </p>
+    <hr>
+
+    <h3 id="Estrutura-HTML">Estrutura basica do HTML</h3>
+    <p>
+        A estrutura básica de um documento HTML segue uma hierarquia de elementos denominados de "TAGS" marcadas por
+        "&lt;&gt;" e o conteúdo dentro desta marcação, as tags organizam e definem o conteúdo de uma página web. a
+        estrutura base do HTML é:
+    </p>
+    <p>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;title&gt;<br>
+        &lt;meta&gt;<br>
+        &lt;body&gt;<br>
+    </p>
+    <p>
+        Está seria a estrutura padrão de todo documento HTML, sendo que toda pagina mantera esta mesma estrutura. Além
+        disso grande partes das tags, possum um fechamento, para demarcar onde ela se finaliza, sendo estas utilizadas
+        com &lt;/&gt;.
+    </p>
+    <hr>
+
+    <h3 id="Tags">O que são tags</h3>
+    <p>
+        As tags HTML são os elementos fundamentais usados para criar e estruturar documentos em HTML. Elas são
+        responsáveis por definir diferentes tipos de conteúdo em uma página da web, como textos, imagens, links,
+        formulários, e muito mais.
+    </p>
+    <p>
+        Cada tag é delimitada por colchetes angulares (&lt;/&gt;). Em sua forma mais simples, as tags consistem em um
+        elemento de abertura e um elemento de fechamento, com o conteúdo entre elas. A tag de fechamento inclui uma
+        barra ("/") antes do nome da tag.
+    </p>
+    <hr>
+    
+    <h3 id="Principais-Tags">Principais tags</h3>
+    <ul>
+        <li>
+            <h5 id="H1-6">TAG H1 - H6</h5>
+            <p>
+                Representada pela sintaxe &lt;h1&gt;, e fechada com &lt;/h1&gt;, representa o titulo do texto, e demanda
+                o nivel de importancia do titulo indo da hierarquia de 1 até 6, onde 1 é o de maior importanciae o 6 de
+                menor importancia.
+            </p>
+        </li>
+        <li>
+            <h5 id="p">TAG P</h5>
+            <p>
+                Faz a marcação de paragrafos na pagina, utiliza a tag &lt;p&gt; e &lt;/p&gt;. assim a pagina fica
+                estruturada e melhor identificado onde inicia e termina cada paragrafo.
+            </p>
+        </li>
+        <li>
+            <h5 id="img">TAG IMG</h5>
+            <p>
+                Utiliza para anexar imagens a pagina web, refenciando um endereço de links externo ou caminho do
+                reporsitorio na maquina. Utiliza o formato &lt;img src="" alt=""&gt;. Diferente de outras tags, o "img"
+                nao possui fechamento, alem disso conta com os Atributos "src" que indica o caminho do arquivo, e "alt"
+                que seria um texto alternativo caso a imagem apresenta algum problema no carregamento.
+            </p>
+        </li>
+        <li>
+            <h5 id="a">TAG A</h5>
+            <p>
+                Realiza a aconragem com outros links, tanto internos quanto externos, &lt;a href=""&gt;&lt;/a&gt;,
+                o href diz o caminho a ser apontado, e o conteudo entre a abertura e o fechamento da tag se tornara o
+                hipertextos de ancora.
+            </p>
+            <p>Exemplo: &lt;a href="www.google.com.br"&gt; <a href="https://www.google.com/">Este link leva até o google</a>
+                &lt;/a&gt;</p>
+        </li>
+        <li>
+            <h5 id="str">Tag Strong</h5>
+            <p>
+                Utilizada para estilizar uma parte do texto, deixando-o em negrito, veio para substituir a tag
+                descontinuada &lt;b&gt;, sua sintaxi é <strong>&lt;strong&gt;o conteudo entre ela ficara em
+                negrito&lt;/strong&gt;,</strong>
+            </p>
+        </li>
+        <li>
+            <h5 id="i">Tag I</h5>
+            <p>
+                Fara o texto ficar com inclinação italica, substituindo o &lt;em&gt;, a sintaxi utilizada é
+                &lt;i&gt;<i>o conteudo entre ela ficara em italico</i>&lt;/i&gt;, 
+            </p>
+        </li>
+        <li>
+            <h5 id="u">Tag U</h5>
+            <p>
+                Defini uma linha abaixo do conteudo delimitado estilo de marcação <u>&lt;u&gt;underline&lt;/u&gt;</u>,o
+                conteudo entre ela tera um <u>underline</u>
+            </p>
+        </li>
+        <li>
+            <h5 id="hr">Tag HR</h5>
+            <p>
+                Faz uma linha horizontal de uma ponta a outa na pagina, normalimente utilizadas para separar temas em uma
+                pagina &lt;hr&gt;
+            </p>
+        </li>
+        <li>
+            <h5 id="block">Tag Blockquote</h5>
+            <p>
+                Utilizada para mostar que este conteudo é uma sitação de outra pessoa, deixa o texto levemente centralizado.
+                <blockquote>&lt;blockquote&gt;Isto é uma sitação&lt;/blockquote&gt;</blockquote>
+            </p>
+        </li>
+        <li>
+            <h5 id="mark">Tag Mark</h5>
+            <p>
+                Faz uma marcação em um trecho do texto deixando-o destacado com uma faixa colorida, &lt;mark&gt;<mark>estilo um marca texto.</mark>&lt;/mark&gt;
+                
+            </p>
+        </li>
+        <li>
+            <h5 id="small">Tag small</h5>
+            <p>
+                Faz um texto com fonte menor ao resto do conteudo da pagina. <small>&lt;small&gt;Texto pequeno&lt;/small&gt;</small>
+            </p>
+        </li>
+        <li>
+            <h5 id="sup">Tag SUP</h5>
+            <p>
+                Define um trecho do texto para ficar acima dos demais, porém na mesma linha, normalmente utilizado em notas.
+                <sup>&lt;sup&gt;Isto é uma nota&lt;/sup&gt;</sup>
+            </p>
+        </li>
+        <li>
+            <h5 id="sub">Tag SUB</h5>
+            <p>
+                Similar ao sup, o sub define um texto para ficar abaixo do restante da linha.
+                Define um trecho do texto para ficar acima dos demais, porém na mesma linha, normalmente utilizado em notas.
+                <sub>&lt;sub&gt;Isto é outra nota&lt;/sub&gt;</sub>
+            </p>
+        </li>
+    </ul>
+    <hr>
+
+    <h4 id="list">Tags de Listas</h4>
+    <p>Em HTML também é muito utilizado o sistemas de Listas, temos dois modelos principais, "listas Ordenadas" e 
+        "listas não oredenadas", utilizando respecticamente as tags &lt;ol&gt;&lt;/ol&gt; e &lt;ul&gt;&lt;/ul&gt;.
+        Além disso para declarar itens nas listas é utilizado o comando &lt;li&gt;&lt;/li&gt; "List Iten"
+    </p>
+    <p>Em caso de Listas ordenadas, elas segiram padrões que indiquem uma sequencia (ex.: "123", "abc" ou "I,II,III").
+        <ol><li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li></ol>
+    </p>
+    <p>
+        Para as listas não ordenadas, como a ordem não é importande, pode ser feitas com simbolos como circulos, qualdrados, traço e etc.
+        <ul><li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li></ul>
+    </p>
+    <p>É possivel estilizar os marcadores atrves de atributos direto na tag ou via CSS.</p>
+    <hr>
+
+    <h3 id="outras-tags">Outras tags</h3>
+    <p>Há inumeras outras tags disponiveis no HTML além das ja abordadas acima, como por exemplo &lt;font&gt;, &lt;del&gt;, &lt;abbr&gt;, &lt;table&gt; etc.</p>
+    <p>
+        Abixo uma pequena explicação sobre cada:
+    </p>
+    <p>Font é utilizada para definir atributos a um texte fonte, o tamanho e a cor. No entanto, essa tag está obsoleta e não é recomendada para uso em HTML5, pois a formatação de texto deve ser feita preferencialmente através de CSS.</p>
+    <p>O Del, indica que um trecho de texto foi removido ou deletado do conteúdo. É geralmente exibido com uma linha atravessada, sendo útil para mostrar alterações em documentos.</p>
+    <p>abbr representa uma abreviação ou acrônimo, podendo incluir um atributo title para fornecer a forma completa ou uma descrição do termo. Isso melhora a acessibilidade e compreensão do conteúdo. Para visualizar a descrição basta repousar o mouse sobre o conteudo</p>
+    <p>Quanto a tag Table, ela é utilizada para a criação de tabelas, onde em conjunto com a tag td e tr compoem as linhas e colunas da tabela.</p>
+
+    <h4>Exemplo de font</h4>
+    <font color = "red" size = "3px" font = "verdana">Este texto esta utilizando a formatação font</font>
+    <h4>Exemplo de del</h4>
+    <del>Este texto não existe mais aqui</del>
+    <h4>Exemplo de abbr</h4>
+    <abbr title="HyperText Markup Language">HTML</abbr><br><br>
+    <table border = 1px>
+        <tr>
+            <td>
+                linha 1,coluna 1
+            </td>
+            <td>
+                linha 1, coluna 2
+            </td>
+            <td>
+                linha 1, coluna 3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                linha 2, coluna 1
+            </td>
+            <td>
+                linha 2, coluna 2
+            </td>
+            <td>
+                linha 2, coluna 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                linha 3, coluna 1
+            </td>
+            <td>
+                linha 3, coluna 2
+            </td>
+            <td>
+                linha 3, coluna 2
+            </td>
+        </tr>
+
+    </table>
+    <hr>
+
+    <h3 id="atr">Atributos de tags</h3>
+    <p>
+        Os atributos de tags HTML são propriedades adicionais que fornecem informações extras sobre um elemento HTML. Eles são usados para modificar o comportamento ou a aparência das tags, permitindo personalizar ainda mais os elementos de uma página.
+    </p>
+    <p>
+        Os atributos são inseridos dentro da tag de abertura e consistem de um nome e um valor separados por um sinal de igual (=). O valor é colocado entre aspas.
+    </p>
+    <p><i><strong>Exemplo: &lt;a href="www.google.com.br"&gt; <a href="https://www.google.com/">Este link leva até o google</a>
+        &lt;/a&gt;</p></strong></i>
+    <p>
+        Neste exemplo, o atributo href define o link para o qual o usuário será direcionado ao clicar no texto.
+    </p>
+    <h4>Principais atributos comuns:</h4>
+
+    <ul>
+        <li>
+            <strong><i>href</i></strong> (em &lt;a&gt;): Define o destino de um link.
+        </li>
+        <li>
+            <strong><i>src</i></strong> (em &lt;img&gt;): Especifica o caminho da imagem a ser exibida.
+        </li>
+        <li>
+            <strong><i>alt</i></strong> (em &lt;img&gt;): Fornece um texto alternativo caso a imagem não carregue.
+        </li>
+        <li>
+            <strong><i>id</i></strong> Atribui um identificador único a um elemento.
+        </li>
+        <li>
+            <strong><i>class</i></strong> Define uma ou mais classes para um elemento, usadas para estilização com CSS.
+        </li>
+        <li>
+            <strong><i>style</i></strong> Aplica estilos diretos ao elemento, como cor ou tamanho de fonte.
+        </li>
+    </ul>
+    <p>
+        Os atributos permitem personalizar e controlar como os elementos HTML interagem e se comportam, melhorando tanto a funcionalidade quanto a acessibilidade da página.
+    </p>
+
+</body>
+
+</html>
